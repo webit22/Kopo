@@ -1,0 +1,30 @@
+package day0315;
+
+import java.util.Scanner;
+
+class Ice {
+	String name;
+	int price;
+}
+
+public class IceCreamMain {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Ice ic = new Ice();
+		Ice ic2 = new Ice();
+		Ice ic3 = new Ice();
+
+		System.out.print("구입할 아이스크림 개수 : ");
+		int num = sc.nextInt();
+
+		for (int i = 0; i < num; i++) {
+			System.out.println("*** " + (i + 1) + "번째 아이스크림 구매 정보 ***");
+			System.out.print("아이스크림 이름 : ");
+			ic.name = sc.nextLine();
+			System.out.print("\n아이스크림 가격 : ");
+			ic.price = sc.nextInt();
+		}
+		System.out.println(ic.name + "과 " + ic.price);
+
+	}
+}

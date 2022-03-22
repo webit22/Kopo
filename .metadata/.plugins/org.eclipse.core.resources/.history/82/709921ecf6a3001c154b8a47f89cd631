@@ -1,0 +1,12 @@
+package day0314;
+
+public class Review {
+	public static void main(String[] args) {
+		int[] nums = new int[10];
+		int[] sum = new int[2]; // [0] : Â¦¼ö ÃÑÇÕ ~ [1] : È¦¼ö ÃÑÇÕ
+		
+		for(int i = 0; i < nums.length; i++) {
+			sum[nums[i] % 2] += nums[i];
+		}
+	}
+}

@@ -1,0 +1,34 @@
+package kr.ac.kopo.day07;
+
+public class StringMain02 {
+	public static void main(String[] args) {
+//		String str = "Hello";
+//		String str2 = "Hello";
+
+		String str = new String("Hello");
+		String str2 = new String("HELLO");
+
+		if (str == str2) // 둘이 갖고있는 주소값을 비교
+			System.out.println("주소비교 : 같다");
+		else
+			System.out.println("주소비교 : 다르다");
+
+		if (str.equals(str2) == true)
+			System.out.println("문자열비교 : 같다");
+		else
+			System.out.println("문자열비교 : 다르다");
+
+		System.out.println("대소문자 관계없이 문자열 비교 : " + str.equalsIgnoreCase(str2));
+
+		String[] names = { "홍길동", "홍길동", "홍길순", " 박길동", "홍가네", "윤길동" };
+		System.out.println("< full name이 홍길동인 사람 출력 >");
+		for (String name : names) {
+			if (name.equals("홍길동")) {
+				System.out.println(name);
+			}
+		}
+		
+		System.out.println("< 성이 홍씨인 사람 출력 >");
+
+	}
+}

@@ -1,0 +1,16 @@
+package kr.ac.kopo.day06;
+
+import java.util.Scanner;
+
+public class MethodMain04 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("¸î ´Ü : ");
+		int dan = sc.nextInt();
+		System.out.println();
+
+		Gugudan gu = new Gugudan();
+		gu.print(dan);
+		gu.print();
+	}
+}

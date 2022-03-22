@@ -1,0 +1,14 @@
+package kr.ac.kopo.day07;
+
+public class StringMain02 {
+	public static void main(String[] args) {
+		String str = new String("Hello");
+		String str2 = new String("Hello");
+		
+		if(str == str2) // 둘이 갖고있는 주소값을 비교
+			System.out.println("주소비교 : 같다");
+		else
+			System.out.println("주소비교 : 다르다");
+		
+	}
+}

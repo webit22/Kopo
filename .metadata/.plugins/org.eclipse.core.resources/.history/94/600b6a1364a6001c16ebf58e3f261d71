@@ -1,0 +1,26 @@
+package kr.ac.kopo.day07;
+
+public class Member {
+
+	String name;
+	int age;
+	String bloodType;
+
+	// 멤버변수 정의하기 (아니면 선언이랑 함께 써도 됨)
+	Member() {
+		name = "알 수 없음";
+		age = -1;
+		bloodType = "알 수 없음";
+	}
+
+	Member(String n) {
+		name = n;
+		age = -1;
+		bloodType = "알 수 없음";
+	}
+
+	// 이 회원의 정보를 출력하기위한 메소드
+	void info() {
+		System.out.println("이름 : " + name + ", 나이 : " + age + ", 혈액형 : " + bloodType);
+	}
+}

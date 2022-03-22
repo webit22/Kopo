@@ -1,0 +1,34 @@
+package kr.ac.kopo.day08.extend;
+
+// 관리자(Manager)는 사원(Employee)의 한 형태다 라는 조건에 부합 -> 상속관계
+public class Manager02 extends Employee{
+
+	String name;
+	int salary;
+	String grade;
+	Employee[] empList; // 관리사원목록
+
+	Manager02(){}
+	
+	???
+	// 아래의 이 메소드만 작성하면 상위 클래스 생성자가 정의되지 않았다고 에러남
+	// 하위 클래스에 매개변수 없는 "기본 생성자" 하나 만들어주고 나서 하위클래스 생성자에 "super()"를 써야 접근 가능
+	Manager02(String name, int salary, String grade, Employee[] empList) {
+		super();
+		this.name = name;
+		this.salary = salary;
+		this.grade = grade;
+		this.empList = empList;
+	}
+
+	void info() {
+		System.out.println("사원명 : " + name + ", 연봉 : " + salary + "만원, 직급 : " + grade);
+		System.out.println("----------------------------------------");
+		System.out.println("\t관리사원 목록");
+		System.out.println("----------------------------------------");
+		for (Employee e : empList) {
+			e.info();
+		}
+		System.out.println("----------------------------------------");
+	}
+}

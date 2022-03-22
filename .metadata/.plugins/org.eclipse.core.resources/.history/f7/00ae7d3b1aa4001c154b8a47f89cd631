@@ -1,0 +1,14 @@
+package kr.ac.kopo.day05;
+
+public class ArrayMain06 {
+	public static void main(String[] args) {
+		int[][] ar = new int[3][];
+
+		for (int i = 0; i < ar.length; i++) {
+			ar[i] = new int[(int) (Math.random() * 3) + 2];
+		}
+		for (int[] arr : ar) {
+			System.out.println(arr);
+		}
+	}
+}

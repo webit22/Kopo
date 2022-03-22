@@ -1,0 +1,10 @@
+package kr.ac.kopo.day06;
+
+public class Gugudan {
+	void print(int dan) {
+		System.out.println("*** " + dan + "´Ü ***");
+		for (int i = 1; i <= 9; i++) {
+			System.out.printf("%d * %d = %d\n", dan, i, (dan * i));
+		}
+	}
+}

@@ -1,0 +1,27 @@
+package day0314;
+import java.util.Scanner;
+
+public class Review {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] nums = new int[10];
+		int[] sum = new int[2]; // [0] : Â¦¼ö ÃÑÇÕ ~ [1] : È¦¼ö ÃÑÇÕ
+		
+		for(int i = 0; i < nums.length; i++) {
+			System.out.print(i+1 + "¹øÂ° Á¤¼ö ÀÔ·Â : ");
+			nums[i] = sc.nextInt();
+			sum[nums[i] % 2] += nums[i];
+		}
+		
+		String[] title = {"Â¦¼ö", "È¦¼ö"};
+		for(int mod = 0; mod <= 1; mod++) {
+			System.out.println("< " + title[mod] + " >");
+			for(int i = 0; i < nums.length; i++) {
+				if(nums[i] % 2 == 0)
+					System.out.print(nums[i] + "  ");
+			}
+			System.out.println();
+			System.out.println(title[mod] + "ÃÑÇÕ : " + sum[mod]);
+		}
+	}
+}

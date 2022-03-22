@@ -1,0 +1,15 @@
+package kr.ac.kopo.day07;
+
+public class Member {
+
+	String name;
+	int age;
+	String bloodType;
+	
+	// 이 회원의 정보를 출력하기위한 메소드
+	void info() {
+		System.out.println("이름 : " + name
+				+ ", 나이 : " + age
+				+ ", 혈액형 : " + bloodType);
+	}
+}

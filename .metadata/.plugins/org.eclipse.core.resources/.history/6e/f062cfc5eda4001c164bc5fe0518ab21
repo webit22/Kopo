@@ -1,0 +1,27 @@
+package kr.ac.kopo.day06;
+
+class Cat {
+	void sleep() {
+		System.out.println("고양이가 잠을 잔다");
+	}
+
+	void meow() {
+		System.out.println("고양이가 냐옹 한다");
+	}
+}
+
+class Method {
+	void call() {
+		System.out.println("call() 메소드 호출");
+	}
+}
+
+public class MethodMain02 {
+	public static void main(String[] args) {
+		Method m = new Method();
+		m.call();
+
+		Cat nabi = new Cat();
+		nabi.meow();
+	}
+}

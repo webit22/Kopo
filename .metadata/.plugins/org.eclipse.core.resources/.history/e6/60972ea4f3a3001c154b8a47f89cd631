@@ -1,0 +1,12 @@
+package day04;
+import java.util.Scanner;
+
+public class Problem02 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int[] arr = new int[10];
+		int sumEven = 0, sumOdd = 0;
+		
+	}
+}
