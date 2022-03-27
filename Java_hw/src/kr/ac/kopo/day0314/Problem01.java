@@ -1,4 +1,4 @@
-package day0314;
+package kr.ac.kopo.day0314;
 import java.util.Scanner;
 
 public class Problem01 {
@@ -18,6 +18,6 @@ public class Problem01 {
 		for(int i = 0; i < num.length; i++) {
 			System.out.print(num[i] + " ");
 		}
-		System.out.println("\nÃÑÇÕ : " + sum);
+		System.out.println("\nï¿½ï¿½ï¿½ï¿½ : " + sum);
 	}
 }

@@ -27,16 +27,16 @@ public class CharacterMain {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("ºñ±³ÇÒ ¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
 		String strInput = sc.nextLine();
-		System.out.print("°Ë»öÇÒ ¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
 		char ch = sc.nextLine().charAt(0);
 
-		// ¹®ÀÚ¿­ #1
+		// ï¿½ï¿½ï¿½Ú¿ï¿½ #1
 		int intResult = checkChar(strInput, ch);
 		System.out.println(intResult);
 
-		// ¹®ÀÚ¿­ #2
+		// ï¿½ï¿½ï¿½Ú¿ï¿½ #2
 		String strResult = removeChar(strInput, ch);
 		System.out.println(strResult);
 	}
