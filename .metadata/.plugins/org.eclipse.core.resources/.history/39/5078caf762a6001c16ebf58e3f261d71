@@ -1,8 +1,0 @@
-package kr.ac.kopo.day07;
-
-public class ConstructorMain02 {
-	public static void main(String[] args) {
-		Member m = new Member();
-		System.out.println();
-	}
-}
